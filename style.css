@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+.logo{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.dimensione-logo{
+  width: 150px;
+  padding: 5px;
+  border-right: 1px solid lightgrey;
+}
+
+nav{
+  height: 70px;
+
+  margin-bottom: 20px;
+}
+
+nav li{
+  list-style: none;
+  display: inline;
+}
+
+nav li a{
+  color: grey;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 10px;
+}
+
+nav li a:hover{
+ color: coral;
+}
+
+.banner {
+  height: 650px;
+  background: url(img/banner.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;;
+}
+
+.testo-banner {
+  padding-top: 400px;
+  padding-left: 40px;
+  padding-bottom: 60px;
+  padding-right: 400px;
+  color: white;
+}
+
+.testo-banner h1{
+  font-size: 40px;
+}
+
+.testo-banner p{
+  font-size: 18px;
+}
+
+/* /Header */
+
+/* Main */
+main{
+  background-color: darkblue;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.title{
+  height: 100px;
+  margin-bottom: 20px;
+  background-color: darkcyan;
+}
+
+.col{
+  float: left;
+  background-color: darkcyan;
+  height: 600px;
+}
+
+.col-left, .col-right{
+  width: 20%;
+}
+
+.col-center{
+  width: 56%;
+  margin: 0 2%;
+}
+/* /Main */
+
+/* Footer */
+foo{
+  height: 100px;
+  background-color: blueviolet;
+}
+/* /Footer */
