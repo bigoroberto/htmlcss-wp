@@ -55,10 +55,16 @@ nav li a:hover{
 
 .banner {
   height: 650px;
-  background: url(img/banner.jpg) no-repeat center;
+  background: url(img/banner.jpg) center;
   background-size: cover;
   border-radius: 10px;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
+}
+
+.opaco-banner{
+  height: 650px;
+  border-radius: 10px;
+  background-color: rgba(30, 30, 30, 0.20);
 }
 
 .testo-banner {
@@ -81,7 +87,6 @@ nav li a:hover{
 
 /* Main */
 main{
-  background-color: darkblue;
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
@@ -89,13 +94,19 @@ main{
 .title{
   height: 100px;
   margin-bottom: 20px;
-  background-color: darkcyan;
+}
+
+.title h1{
+  font-size: 40px;
+}
+
+.title span{
+  font-size: 20px;
+  color: grey;
 }
 
 .col{
   float: left;
-  background-color: darkcyan;
-  height: 600px;
 }
 
 .col-left, .col-right{
@@ -106,11 +117,54 @@ main{
   width: 56%;
   margin: 0 2%;
 }
+
+.img-sx, .img-center, .img-dx{
+  height: 250px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.img-sx{
+  background-image: url(img/img-1.jpg);
+  background-position: center;
+}
+
+.img-center{
+  background-image: url(img/banner-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-dx{
+  background-image: url(img/img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.opaco{
+  height: 250px;
+  background-color: rgba(30, 30, 30, 0.20);
+  border-radius: 10px;
+}
+
+.col h2{
+  line-height: 60px;
+}
+
+.col p{
+  color: #A8A8A8;
+}
 /* /Main */
 
 /* Footer */
-foo{
+footer{
   height: 100px;
-  background-color: blueviolet;
+  text-align: center;
+}
+
+footer span::after {
+  content: ' \2764';
+  color: red;
 }
 /* /Footer */
