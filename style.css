@@ -1,4 +1,5 @@
-*{
+/* GLOBAL */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,10 +7,12 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
+  font-size: 300;
+  color: rgb(58, 58, 58);
 }
 
-.clearfix::after{
-  content:"";
+.clearfix:after {
+  content: '';
   display: table;
   clear: both;
 }
@@ -17,96 +20,107 @@ body{
 .container{
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
-/* Header */
-.logo{
-  margin-top: 40px;
-  margin-bottom: 20px;
+.overlay{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.dimensione-logo{
-  width: 150px;
-  padding: 5px;
-  border-right: 1px solid lightgrey;
-}
+/* HEADER */
 
-nav{
+.logo img{
   height: 70px;
+  padding-right: 20px;
+  border-right: 1px solid #ccc;
+  margin-bottom: 40px;
+}
 
-  margin-bottom: 20px;
+/* menu */
+nav{
+  margin-bottom: 40px;
 }
 
 nav li{
   list-style: none;
   display: inline;
-}
-
-nav li a{
-  color: grey;
-  text-decoration: none;
-  text-transform: uppercase;
   padding-right: 10px;
 }
 
-nav li a:hover{
- color: coral;
+nav li a{
+  color: rgb(121, 121, 121);
+  text-decoration: none;
+  text-transform:uppercase;
 }
 
-.banner {
-  height: 650px;
-  background: url(img/banner.jpg) center;
+nav li a:hover{
+  color:coral;
+}
+
+.banner{
+  height: 500px;
+  background-image: url("img/banner.jpg");
   background-size: cover;
+  background-position: center;
   border-radius: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
-.opaco-banner{
-  height: 650px;
-  border-radius: 10px;
-  background-color: rgba(30, 30, 30, 0.20);
-}
-
-.testo-banner {
-  padding-top: 400px;
-  padding-left: 40px;
-  padding-bottom: 60px;
-  padding-right: 400px;
-  color: white;
-}
-
-.testo-banner h1{
-  font-size: 40px;
-}
-
-.testo-banner p{
-  font-size: 18px;
-}
-
-/* /Header */
-
-/* Main */
+/* MAIN */
 main{
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 
+.banner-text{
+  color: white;
+  padding-left: 50px;
+  padding-top: 20%;
+  padding-right: 40%;
+}
+
+.banner-text h3{
+  font-size: 30px;
+}
+
 .title{
-  height: 100px;
   margin-bottom: 20px;
 }
 
-.title h1{
+.title h2{
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
 }
 
-.title span{
-  font-size: 20px;
-  color: grey;
+.title h4{
+  font-size: 17px;
 }
 
+/* colonne */
 .col{
-  float: left;
+  float:left;
+}
+
+.col .box-img{
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.col-left .box-img{
+  background-image: url("img/img-1.jpg");
+}
+
+.col-center .box-img{
+  background-image: url("img/banner-2.jpg");
+}
+
+.col-right .box-img{
+  background-image: url("img/img-3.jpg");
 }
 
 .col-left, .col-right{
@@ -118,53 +132,32 @@ main{
   margin: 0 2%;
 }
 
-.img-sx, .img-center, .img-dx{
-  height: 250px;
-  margin: auto;
-  border-radius: 10px;
+.col .col-text{
+  padding-top: 20px;
+}
+.col .col-text h4{
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
 }
 
-.img-sx{
-  background-image: url(img/img-1.jpg);
-  background-position: center;
+.col .col-text p{
+
 }
 
-.img-center{
-  background-image: url(img/banner-2.jpg);
-  background-size: cover;
-  background-position: center;
-}
 
-.img-dx{
-  background-image: url(img/img-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.opaco{
-  height: 250px;
-  background-color: rgba(30, 30, 30, 0.20);
-  border-radius: 10px;
-}
-
-.col h2{
-  line-height: 60px;
-}
-
-.col p{
-  color: #A8A8A8;
-}
-/* /Main */
-
-/* Footer */
+/* FOOTER */
 footer{
-  height: 100px;
   text-align: center;
+/*   margin-bottom: 40px; */
 }
 
-footer span::after {
-  content: ' \2764';
+/* footer .love::after{
+  content: "\2665";
   color: red;
+  font-size: 20px;
+} */
+
+footer .love span{
+  color: red;
+  font-size: 20px;
 }
-/* /Footer */
